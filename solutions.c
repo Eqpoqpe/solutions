@@ -12,7 +12,7 @@
  * [0] -> [] => min value write it in index [0]
  */
 
-int *fsort(arg_st nms)
+int *naive_fsort(arg_st nms)
 {
 	/* full sort */
 	unsigned int index = 0;
@@ -37,7 +37,7 @@ int *fsort(arg_st nms)
 	return result;
 }
 
-void fsort_r(arg_st nms, int *result_arg)
+void naive_fsort_r(arg_st nms, int *result_arg)
 {
 	/* full sort */
 	unsigned int index = 0;
