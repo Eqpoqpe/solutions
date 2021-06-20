@@ -11,7 +11,7 @@ struct arg_t {
 };
 
 void *fsort(arg_st);
-void fsort_r(arg_st, int *);
+void fsort_r(arg_st, int **);
 void single_nm(arg_st);
 void half_sort_r(arg_st, int *);
 int *intersect(arg_st, arg_st);
