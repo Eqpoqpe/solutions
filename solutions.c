@@ -59,34 +59,11 @@ static inline __is_into__(int num, int *nums, int size)
 }
 
 void naive_rotate(int *nms, const int siz, const int mov)
-{}
+{
+	;
+}
 
 /* naive intersect */
 int *naive_intersect(int *nms1, int *nms2, int nms1_siz, int nms2_siz)
 {
-	unsigned int index = 0;
-	unsigned int count = 0;
-	unsigned int inside = 0;
-	int _min = ((nms1_siz < nms2_siz) ? nms1_siz : nms2_siz);
-	int buf[_min];
-	for (; index < _min; index++) {
-		for (inside = 0; inside < nms2_siz; inside++) {
-			if (*(nms1 + index) == *(nms2 + inside)) {
-				buf[count] = *(nms1 + index);
-				nms2_siz--;
-				count++;
-				//mov_index(nms2, insde, nms2_siz);
-				for (unsigned int _index = inside; \
-						_index < (nms2_siz - 1);\
-					       	_index++)
-					*(nms2 + _index) = *(nms2 + (_index + 1));
-				break;
-			}
-		}
-}
-
-int main()
-{
-	int nms[5] = {0,1,2,3,4};
-	return 0;
 }
