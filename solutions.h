@@ -10,11 +10,15 @@ struct arg_t {
         const int size;
 };
 
-void *fsort(arg_st);
-void fsort_r(arg_st, int **);
+struct node_t {
+	int *nums;
+};
+
+void *naive_fsort(arg_st);
+void naive_fsort_r(arg_st, int **);
 void single_nm(arg_st);
 void half_sort_r(arg_st, int *);
-int *intersect(arg_st, arg_st);
+int *naive_intersect(arg_st, arg_st);
 void intersect(arg_st, arg_st, int *);
 
 #define INIT (int) 0
