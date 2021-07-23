@@ -3,7 +3,7 @@ static inline int cmp(const void *n0, const void *n1)
     return (*(int *) n0 - *(int *) n1);
 }
 
-int* twoSum(int* nums, int size, int target, int* ret_size)
+int* two_sum(int* nums, int size, int target, int* ret_size)
 {
     unsigned int index = 0;
     unsigned int ts_size;
