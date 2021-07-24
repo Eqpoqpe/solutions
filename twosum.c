@@ -15,9 +15,10 @@ int* two_sum(int* nums, int size, int target, int* ret_size)
     int *_result = (int *) malloc(sizeof(int) * 2);
     *ret_size = 2;
 
-    /* [] [] [] [] [] [] [] []
-     *  |____________________|
-     *      if not ok, and gt than target number, remove it from temp_sav
+    /* [ ] [ ] [ ] [ ] [ ] [ ] [ ] [ ]
+     *  |___________________________|
+     *
+     *      if not ok, and gt than target number, remove it (end) from temp_sav
      */
     for (; index < size; index++) {
         if (*(nums + index) < target)
