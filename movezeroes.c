@@ -15,11 +15,6 @@ void moveZeroes(int* nums, int size)
         buf[index] = *(nums + index);
     unsigned int z_count = 0;
     qsort(buf, size, sizeof(int), cmp);
-    for (int index = 0; index < size; index++) {
-        if (!(*(buf + index) ^ 0)) {
-            z_count++;
-        }
-    }
     unsigned int m_size = 0;
     for (int index = 0; index < size; index++) {
         if (!(*(nums + index) ^ 0))
@@ -28,7 +23,7 @@ void moveZeroes(int* nums, int size)
             *(nums + (index - m_size)) = *(nums + index);
         }
     }
-    for (; z_count > 0; z_count--) {
-        *(nums + ((size) - z_count)) = 0;
+    for (; m_size > 0; m_size--) {
+        *(nums + ((size) - m_size)) = 0;
     }
 }
