@@ -1,3 +1,6 @@
+#define TEMPLATE	((unsigned int) 0x0)
+#define TRANSFORM	((unsigned int) 0x1)
+
 void naive_rotate(int *nms, int siz, int offset)
 {
 	int buf[siz];
@@ -19,6 +22,4 @@ void naive_rotate(int *nms, int siz, int offset)
 			/* index + transform + offset - siz - transform */
 			buf[index + offset - siz] = *(nms + index);
 	}
-	for (index = 0; index < siz; index++)
-		printf("%d %d\n", *(nms + index), buf[index]);
 }
