@@ -8,7 +8,7 @@ static inline int cmp(const void *n0, const void *n1)
     return 0;
 }
 
-void moveZeroes(int* nums, int size)
+void move_zeroes(int* nums, int size)
 {
     int buf[size];
     for (int index = 0; index < size; index++)
