@@ -13,8 +13,8 @@ static inline int cmp(const void *n0, const void *n1)
     return *ia  - *ib; 
 }
 
-#define INIT_0  ((unsigned int) 0x00000000)
-#define INIT_1  ((unsigned int) 0x00000001)
+#define INIT_0  ((unsigned int) 0x0000)
+#define INIT_1  ((unsigned int) 0x0001)
 
 int *intersect(int *nums0, int size0, int *nums1, int size1, int *ret_size)
 {
