@@ -1,4 +1,4 @@
-name: Solutions: intersect CI
+name: Solutions intersect CI
 
 on:
   push:
